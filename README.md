@@ -1,6 +1,5 @@
 # LimitTextView
-   带有占位文字的textView,能够限制文字|表情输入
-   Swift 的 String 类型是基于 Unicode 标量 建立的。 Unicode 标量是对应字符或者修饰符的唯一的21位数字,注意不是所有的21位 Unicode 标量都代表一个字符，因为有一些标量是留作未来分配的。所以部分Unicode标量可能代表两个字符,textView的字符数,是根据textView.text.characters.count来获取的,所以可能一个emoji表情占用两个字符.
+带有占位文字的textView,能够限制文字|表情输入. Swift 的 String 类型是基于 Unicode 标量 建立的。 Unicode 标量是对应字符或者修饰符的唯一的21位数字,注意不是所有的21位 Unicode 标量都代表一个字符，因为有一些标量是留作未来分配的。所以部分Unicode标量可能代表两个字符,textView的字符数,是根据textView.text.characters.count来获取的,所以可能一个emoji表情占用两个字符.
 ## 引用简单
 
 - 拷贝GFLimitTextView.swift到项目文件
