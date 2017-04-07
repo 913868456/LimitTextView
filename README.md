@@ -25,3 +25,4 @@ class ViewController: UIViewController, GFLiimitTextViewDelegate {
     }
 ```
 
+![测试动画](https://github.com/913868456/LimitTextView/blob/master/limitText.gif)
