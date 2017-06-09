@@ -8,10 +8,6 @@
 
 import UIKit
 
-let limitTextNum = 10  //限制文字字数
-let textFont = UIFont.systemFont(ofSize: 17) //文本字体
-let placeHeight = 30  //占位label的高度
-
 
 ///return textView.text.Characters.count 返回textView的字数
 @objc protocol GFLiimitTextViewDelegate: NSObjectProtocol{
@@ -28,6 +24,9 @@ class GFLimitTextView: UIView, UITextViewDelegate {
     
     var placeText : String?
     var characterNum = 0
+    let limitTextNum = 10  //限制文字字数
+    let textFont = UIFont.systemFont(ofSize: 17) //文本字体
+    let placeHeight = 30  //占位label的高度
     weak var delegate: GFLiimitTextViewDelegate?
     
     //MARK: - LifeCycle
