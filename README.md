@@ -1,7 +1,7 @@
 # LimitTextView
 带有占位文字的textView,能够限制文字|表情输入. Swift 的 String 类型是基于 Unicode 标量 建立的。 获取字符数根据 str.length来获取,关于字符数的详细计算,请参考 [StringsAndCharacters](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html)
 
-# Requirement
+## Requirement
 Swift 4.0+ 
 Xcode 9.4+
 
