@@ -80,13 +80,17 @@ class GFLimitTextView: UIView, UITextViewDelegate {
             placeLabel!.isHidden = true
         }
     }
+    
     func textViewDidChange(_ textView: UITextView) {
         
-        var str = textView.text
-        characterNum = (str?.characters.count)!
+        let str = textView.text ?? "";
+        characterNum = str.count;
         
         if characterNum > limitTextNum {
-            textView.text = str?.substring(to: (str?.index((str?.startIndex)!, offsetBy: limitTextNum))!)
+            let startIndex = str.startIndex;
+            let endIndex = str.index(startIndex, offsetBy: limitTextNum);
+            let range = startIndex..<endIndex;
+            textView.text = String(str[range]);
             
             characterNum = limitTextNum
         }
